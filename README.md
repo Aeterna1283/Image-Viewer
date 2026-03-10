@@ -2,17 +2,23 @@ A simple image viewer that reads in the RGB pixels values of .ppm images. Writte
 
 To install SDL: 
 
+
 sudo apt install libsdl2-dev
+
 
 To Compile the program:
 
+
 gcc -Wall -Wextra -g -o iv view.c `sdl2-config --cflags --libs`
+
 
 After compiling pipe an image into the viewer:
 
+
 cat img.ppm | ./iv
 
-if you are lacking on ppm images I included some in the Optional_imgs_for testing folder :) 
+
+if you are lacking on ppm images I included some in the Optional_imgs_for testing folder:) if you would like your own ppm images to test gimp allows for the exporting of images as ppm
 
 <img width="1032" height="548" alt="Screenshot 2026-03-10 194443" src="https://github.com/user-attachments/assets/a6f5ab97-045f-4bc4-9f18-65c8529afa16" />
 
@@ -25,7 +31,9 @@ for allowing for the resizing of the window. Sdl typically destroys and recreate
 
 PPM binary pixels are just flat streams of red, blue, green, so a simple loop is enough to read each pixel, and convert them into SDL'S format. 
 
-Image quality depends on the original image:
+
+
+Image quality depends on the original image so make sure you are satisfied with the quality
 
 <img width="1162" height="614" alt="Screenshot 2026-03-10 194906" src="https://github.com/user-attachments/assets/8a983fbf-12f3-4959-9ab7-e39153729ca3" />
 
