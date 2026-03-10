@@ -30,3 +30,10 @@ Image quality depends on the original image:
 <img width="1162" height="614" alt="Screenshot 2026-03-10 194906" src="https://github.com/user-attachments/assets/8a983fbf-12f3-4959-9ab7-e39153729ca3" />
 
 
+
+After modifications (and fixing seg faults this image viewer can handle 4k images
+<img width="1277" height="605" alt="Screenshot 2026-03-10 195029" src="https://github.com/user-attachments/assets/acc45475-befa-496f-8f77-b552ac737bc4" />
+
+
+
+
