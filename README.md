@@ -23,4 +23,10 @@ Image Viewer discards the specifier, discards the commented line, and parses wid
 SDL2 is used for the creation of the window and rendering. The code creates a window with the dimensions of the input image, and is marked as resizable. After the window's drawing surface is created, a second offscreen surface is created
 for allowing for the resizing of the window. Sdl typically destroys and recreates a window surface when a window is resized, while the offscreen surface remains unaffected by that issue.
 
-PPM binary pixels are just flat streams of red, blue, green, so a simple loop is enough to read each pixel, and convert them into SDL'S format.
+PPM binary pixels are just flat streams of red, blue, green, so a simple loop is enough to read each pixel, and convert them into SDL'S format. 
+
+Image quality depends on the original image:
+
+<img width="1162" height="614" alt="Screenshot 2026-03-10 194906" src="https://github.com/user-attachments/assets/8a983fbf-12f3-4959-9ab7-e39153729ca3" />
+
+
