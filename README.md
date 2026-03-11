@@ -40,7 +40,7 @@ Image Viewer discards the specifier, discards the commented line, and parses wid
 SDL2 is used for the creation of the window and rendering. The code creates a window with the dimensions of the input image, and is marked as resizable. After the window's drawing surface is created, a second offscreen surface is created
 for allowing for the resizing of the window. Sdl typically destroys and recreates a window surface when a window is resized, while the offscreen surface remains unaffected by that issue.
 
-PPM binary pixels are just flat streams of red, blue, green, so a simple loop is enough to read each pixel, and convert them into SDL'S format. 
+PPM binary pixels are just flat streams of red, green, blue so a simple loop is enough to read each pixel, and convert them into SDL'S format. 
 
 
 
@@ -50,9 +50,13 @@ Image quality depends on the original image so make sure you are satisfied with 
 
 
 
-After some modifications (and fixing seg faults) the image viewer can not support 4k images
+After some modifications (and fixing seg faults) **the image viewer can now support 4k images**
 <img width="1277" height="605" alt="Screenshot 2026-03-10 195029" src="https://github.com/user-attachments/assets/acc45475-befa-496f-8f77-b552ac737bc4" />
 
 
 
 
+
+## Usage
+
+Quite a niche project (mainly because nobody uses ppm), however I created it for the knowledge of how image viewers work. And it is a quick and handy program for working with raytracing and outputting and viewing simple ppm images, instead of finding an obscure website online.
